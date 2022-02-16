@@ -1,67 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1644905336154,
+  "lastUpdate": 1645039894269,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cf0bab303856263c2d19d0b64a078f69b4a72d52",
-          "message": "ci: upgrade node to v16 (#1624)\n\n* ci: upgrade node to v16 (which includes npm v7+ by default)\r\n* devp2p: _peerStatus type fix\r\n* util: spec type fix\r\n* update package-lock\r\n* vm: fix type error\r\n* client: exclude null type to fix type error",
-          "timestamp": "2022-01-10T09:34:33-08:00",
-          "tree_id": "63a7e75cfa7859e4a83750041929c811b1b3f35e",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/cf0bab303856263c2d19d0b64a078f69b4a72d52"
-        },
-        "date": 1641836423839,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 16079,
-            "range": "±5.70%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 13409,
-            "range": "±11.66%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 16694,
-            "range": "±2.53%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 16856,
-            "range": "±3.15%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 16845,
-            "range": "±2.46%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1770,6 +1711,65 @@ window.BENCHMARK_DATA = {
             "range": "±5.12%",
             "unit": "ops/sec",
             "extra": "68 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cesarbrazon10@gmail.com",
+            "name": "Cesar Brazon",
+            "username": "cbrzn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f4f34c8d668c359aa56abd984ffa69aaac4f1b08",
+          "message": "Client: Geth genesis parser minor fix (#1720)",
+          "timestamp": "2022-02-16T11:26:49-08:00",
+          "tree_id": "c2e5b085ea21e302149af021168ccb1f81448cdb",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/f4f34c8d668c359aa56abd984ffa69aaac4f1b08"
+        },
+        "date": 1645039893756,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 19292,
+            "range": "±9.27%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 20717,
+            "range": "±2.02%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 16552,
+            "range": "±15.45%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 19989,
+            "range": "±1.75%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 19995,
+            "range": "±2.06%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
           }
         ]
       }
