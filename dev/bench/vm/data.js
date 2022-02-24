@@ -1,67 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1645743571171,
+  "lastUpdate": 1645746456049,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "ee0004729119338c2bbd37434df8a202ad92e440",
-          "message": "VM: Adopted Backwards-compatible Dynamic Gas Cost Refactoring (#1553)\n\n* VM: report dynamic gas values in `fee` field of `step` event (#1364)\r\n* vm: codes: add dynamicGas property\r\nvm: codes: make codes more typesafe\r\n* vm: create no-op dynamic gas handlers\r\n* vm: first batch of dynamic gas up to 0x3f\r\n* vm: add other opcodes to gas map\r\nvm: change step event fee type from number to BN\r\nvm: deduct dynamic gas\r\nvm: fix stack peek\r\nvm: do not add gasLimit to gas cost for CREATE\r\n* vm: move errors to gas map\r\n* vm: fix memory dynamic  gas bug\r\n* vm: fix gas bugs caused by not considering base fee\r\n* vm: fix message call gas related bugs, clone current gas left\r\n* add typedoc for peek\r\nuse underscore for unused peek params (and fix eslint config)\r\nformat some comment newlines for readability\r\nswitch from require to import for exceptions\r\n* simplify the 2929 state manager castings in runTx\r\n* add changelog entry\r\n* vm: add EIP1283 tests\r\n* vm: split non-eip2929 and eip2929 gas costs\r\n* vm: fix gas costs\r\n* vm: add early-hardfork coverage\r\n* vm: clarify pre-Constantinople SSTORE gas\r\nvm: clarify EIP-150 comment\r\n* run coverage for all state and blockchain tests, remove redundant istanbul run\r\n* vm: fix CALLCODE gas\r\nvm: explicitly clone gasLimit for maxCallGas\r\n* vm: remove TODO in interpreter\r\n* update defaultCost to BN, cast 2929 statemanager to simplify use syntax\r\n* use underscore for unused variables, simplify types since they can be inferred\r\n* vm: fix browser tests + fix rebase\r\n* VM: moved dynamic fee to dedicated dynamicFee field in step event and retained fee behavior and type for backwards compatibility\r\n* VM: aligned InterpreterStep and step event object property documentation, completed missing step event properties\r\n* VM: test fix\r\n* vm: fix hardhat e2e tests\r\n* vm: fix MSTORE opcodes\r\n* vm: added dynamicGas property to push0 (EIP-3855) opcode\r\n* hardhat e2e: add temporary workaround for skipping tests with inconsistent memory field\r\n* nit style: use underscore instead of comment out unused variable\r\nCo-authored-by: Jochem Brouwer <jochembrouwer96@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2022-01-12T12:37:04-08:00",
-          "tree_id": "ca4f6fbea31b489e48faabea0379acfc43490e00",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ee0004729119338c2bbd37434df8a202ad92e440"
-        },
-        "date": 1642020106641,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 17585,
-            "range": "±5.76%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 13940,
-            "range": "±10.87%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 16981,
-            "range": "±2.40%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 17262,
-            "range": "±2.42%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 17267,
-            "range": "±2.44%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1770,6 +1711,65 @@ window.BENCHMARK_DATA = {
             "range": "±13.41%",
             "unit": "ops/sec",
             "extra": "66 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "187689004283b91cb8bb929c327b388826d9c45c",
+          "message": "client: improve geth genesis parse (#1741)\n\n* client: improve geth genesis parse\r\n* Add tests for extradata/timestamp chcks\r\n* update tests to use st.equals\r\n* organize client testdata into subfolders and normalize json file names\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
+          "timestamp": "2022-02-24T15:42:28-08:00",
+          "tree_id": "ce3d40c868ed6bb8fe5c491cfbc6a9febb84b480",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/187689004283b91cb8bb929c327b388826d9c45c"
+        },
+        "date": 1645746455486,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 16851,
+            "range": "±7.99%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 17838,
+            "range": "±2.54%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 14945,
+            "range": "±14.79%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 18530,
+            "range": "±2.25%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 18115,
+            "range": "±2.46%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
           }
         ]
       }
