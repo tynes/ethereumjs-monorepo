@@ -1,67 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1645822770178,
+  "lastUpdate": 1646015073724,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "93c4c4ad182d4b4be54b6346aab70f615fb21bb8",
-          "message": "VM: Jump dest analysis enhancements (#1629)\n\n* Change valid jumps to single array\r\n* Switch array to Uint8Array\r\n* use correct opt code\r\n* Check for jumpsub\r\n* Address feedback\r\n* Address fixes\r\n* More efficiency\r\n* Adjust if/else logic for efficiency\r\n* Move comments\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2022-01-13T13:34:03-08:00",
-          "tree_id": "ad3f72a3cc8eb16cd84041e4fabe6cf31f19ae86",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/93c4c4ad182d4b4be54b6346aab70f615fb21bb8"
-        },
-        "date": 1642109897767,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 18940,
-            "range": "±5.42%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 16200,
-            "range": "±10.14%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 19718,
-            "range": "±1.79%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 19672,
-            "range": "±2.25%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 19439,
-            "range": "±2.08%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1770,6 +1711,65 @@ window.BENCHMARK_DATA = {
             "range": "±3.31%",
             "unit": "ops/sec",
             "extra": "76 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "76567250+g11tech@users.noreply.github.com",
+            "name": "g11tech",
+            "username": "g11tech"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c842a973bc8058df71cda140fe0720292e1aafe1",
+          "message": "client: Jwt token based auth for engine api enabled via `rpcEngineAuth` arg (#1751)\n\n* Jwt token based auth for engine api",
+          "timestamp": "2022-02-27T18:18:49-08:00",
+          "tree_id": "3b918b21228ea4f82ee21ff14e225f0dabd74111",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c842a973bc8058df71cda140fe0720292e1aafe1"
+        },
+        "date": 1646015073143,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 12767,
+            "range": "±5.92%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 13894,
+            "range": "±2.69%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 12205,
+            "range": "±11.38%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 13091,
+            "range": "±2.67%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 12637,
+            "range": "±3.44%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
           }
         ]
       }
