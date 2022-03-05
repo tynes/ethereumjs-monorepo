@@ -152,11 +152,14 @@ async function createGethGenesisBlockHeader(json: any) {
     stateRoot,
     baseFeePerGas,
   }
-  let common
-  if (baseFeePerGas !== undefined && baseFeePerGas !== null) {
-    // chainId is not important here, we just need London enabled to set baseFeePerGas
-    common = new Common({ chain: 1, hardfork: Hardfork.London })
+  let common = new Common({ chain: 1 })
+  if (json.config.londonBlock === 0) {
+    // chainId is not important here, we just want to set
+    // hardfork to London for baseFeePerGas support
+    const hardforks = common.hardforks().map((h) => (h.name === 'london' ? { ...h, block: 0 } : h))
+    common = Common.custom({ chainId: 1, hardforks })
   }
+  common.setHardforkByBlockNumber(0)
   return BlockHeader.fromHeaderData(headerData, { common })
 }
 
